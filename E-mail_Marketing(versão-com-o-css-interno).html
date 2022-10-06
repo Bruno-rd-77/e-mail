@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-mail_Marketing</title>
+        <link rel="stylesheet" href="E-mail_Marketing.css">
+        <style>
+            :root {
+                --cor_de_fundo: #ffffff;
+                --cor_do_texto: #000000;
+                --cor_desconto: #ff0000;
+                --cor_garnvilla: #f05800;
+            }
+            .corpo__pagina {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                font-family: sans-serif, serif;
+            }
+
+            .banner__principal {
+                width: 100%;
+            }
+
+            .mensagem__pricipal {
+                text-align: justify;
+                width: 100%;
+                margin: 0 auto;
+                background-color: var(--cor_de_fundo);
+                color: var(--cor_do_texto);
+            }
+
+            .imagem__produto {
+                width: 60%;
+            }
+
+            .preco__antigo {
+                text-decoration: line-through 1px #ff0000 solid;
+            }
+
+            .mesma__linha {
+                display: inline;
+            }
+
+            .preco__promocional {
+                font-size: 2em;
+                color: var(--cor_desconto);
+                font-weight: 600;
+            }
+
+            .conteudo__botao__ver+ {
+                text-align: center;    
+            }
+
+            .botao__ofertas {
+                background-color: var(--cor_garnvilla);
+                color: var(--cor_de_fundo);
+                text-decoration: none;
+                text-align: center;
+                margin: 30px auto;
+                display: inline-block;
+                padding: 20px 25px;
+                border-radius: 7px;
+            }
+
+            .banner__vantgens {
+                display: block;
+                width: 100%;
+            }
+
+            .logo__granvilla {
+                width: 150px;
+                margin: 20px 0 15px;
+            }
+
+            .endereco {
+                font-size: 1em;
+                font-weight: 600;
+            }
+
+            .titilo__redes {
+                font-size: 0.88em;
+            }
+
+            .icones__redes {
+                width: 36px;
+                cursor: pointer;
+            }
+
+            .conteudo-contato{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .lista__contato {
+                list-style: none;
+                padding: 0;
+            }
+
+            @media screen and (min-width: 600px) {
+                .corpo__pagina {
+                    width: 45%;
+                }
+
+                .conteudo__produtos {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                aside {
+                    width: 100%;
+                    margin: 0;       
+                }
+            }
+        </style>
+    </head>
+    <body class="corpo__pagina">
+        <header>
+            <img src="principal__banner-2.jpg" alt="banner principal" class="banner__principal">
+        </header>
+        <main>
+            <div class="mensagem__pricipal">
+                <p>Ei, [nome]! Tudo bem?<br><br>
+                    Agosto está acabando e você tem poucos dias para levar com um descontasso essa seleção de produtos que fizemos 
+                    exclusivamente para esse restinho de mês!<br><br>
+    
+                    E mais, aqui na Granvilla você tem:<br><br>
+                                    
+                    👉 12XSEM JUROS em toda a loja;<br>
+                    👉 Consultoria ONLINE GRÁTIS com nossa Arquiteta;<br>
+                    👉 Entrega Express & Clique e Retira.<br>          
+                    Qualquer dúvida é so me chamar no <a href="https://api.whatsapp.com/send?phone=5531988657341&text=Ol%C3%83%C2%A1,%20pode%20me%20ajudar?">Whatsapp</a> ok?<br><br>
+                    
+                    Um abraço,<br>
+                    Letícia da Granvilla</p>
+                </div>
+                <div class="conteudo__produtos">    
+                    <aside class="produto">
+                        <img src="20282.jpg" alt="imagem porcelanato" class="imagem__produto">
+                        <p>Porcelanato Gris Armani Lux - Biancogres (Polido e Retificado) (120x120cm)</p>
+                        <p class="preco__antigo">de R$ 199,90 m²</p>
+                        <p class="mesma__linha">Por</p>
+                        <p class="preco__promocional mesma__linha">R$ 199,90 m²</p>
+                    </aside>
+                    <aside class="produto">
+                        <img src="18340.jpg" alt="imagem porcelanato" class="imagem__produto">
+                        <p>Porcelanato Gris Armani Lux - Biancogres (Polido e Retificado) (120x120cm)</p>
+                        <p class="preco__antigo">de R$ 199,90 m²</p>
+                        <p class="mesma__linha">Por</p>
+                        <p class="preco__promocional mesma__linha">R$ 199,90 m²</p>
+                    </aside>
+                    <aside class="produto">
+                        <img src="17981.jpg" alt="imagem porcelanato" class="imagem__produto">
+                        <p>Porcelanato Gris Armani Lux - Biancogres (Polido e Retificado) (120x120cm)</p>
+                        <p class="preco__antigo">de R$ 199,90 m²</p>
+                        <p class="mesma__linha">Por</p>
+                        <p class="preco__promocional mesma__linha">R$ 199,90 m²</p>
+                    </aside>
+                    <aside class="produto">
+                        <img src="16048.png" alt="imagem porcelanato" class="imagem__produto">
+                        <p>Porcelanato Gris Armani Lux - Biancogres (Polido e Retificado) (120x120cm)</p>
+                        <p class="preco__antigo">de R$ 199,90 m²</p>
+                        <p class="mesma__linha">Por</p>
+                        <p class="preco__promocional mesma__linha">R$ 199,90 m²</p>
+                    </aside>
+                </div>    
+            <div class="conteudo__botao__ver+">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDAzOTcwMTk1NDcwNzY3?story_media_id=2926478341164989140&igshid=NmNmNjAwNzg=" class="botao__ofertas">VER + OFERTAS</a>
+            </div>           
+        </main>        
+        <footer>            
+            <img src="banner-vantagens.jpg" alt="banner vantegens" class="banner__vantgens">
+            <img src="Logo-Granvilla.jpg" alt="Logo Granvilla" class="logo__granvilla">
+            <p class="endereco">Av. Francisco Firmo de Matos, Nº 4.700, B. Novo Riacho,<br>Contagem | MG CEP: 32.280-270 </p>
+            <div>
+                <p class="titilo__redes">Acompanhe a Granvilla nas Redes Sociais: @granvillaacabamentos </p>
+                <a href="https://www.facebook.com/granvilla/"></a><img src="facebook.jpg" alt="facebook" class="icones__redes">
+                <a href="https://www.instagram.com/granvillaacabamentos/"></a><img src="instagram.jpg" alt="instagram" class="icones__redes">
+                <a href="https://www.youtube.com/channel/UCp3kxMBIk1UV8b_DO3AWV2w/videos"></a><img src="youtube.jpg" alt="youtube" class="icones__redes">
+                <p>@granvillaacabamentos</p>
+            </div>
+            <div class="conteudo-contato">
+                <a href="https://api.whatsapp.com/send?phone=5531988657341&text=Ol%C3%83%C2%A1,%20pode%20me%20ajudar?"><img src="whatsapp.jpg" class="icones__redes"></a>
+                <ul class="lista__contato">
+                    <li>(31) 98979-6218 loja</li>
+                    <li>(31) 98865-7341 online</li>
+                    <li>(31) 98865-7511 sac</li>
+                </ul>    
+            </div>            
+        </footer>
+    </body>
+</html>

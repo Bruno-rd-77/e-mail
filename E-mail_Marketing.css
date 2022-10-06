@@ -1,0 +1,112 @@
+:root {
+    --cor_de_fundo: #ffffff;
+    --cor_do_texto: #000000;
+    --cor_desconto: #ff0000;
+    --cor_garnvilla: #f05800;
+    --cor_transparent: transparent;
+}
+html {
+    background: linear-gradient(90deg, #19a9b4 50% ,#e66343 50%);;
+}
+.corpo__pagina {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif, serif;
+}
+
+.banner__principal {
+    width: 100%;
+}
+
+.mensagem__pricipal {
+    text-align: justify;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cor_transparent);
+    color: var(--cor_do_texto);
+}
+
+.imagem__produto {
+    width: 60%;
+}
+
+.preco__antigo {
+    text-decoration: line-through 1px #ff0000 solid;
+}
+
+.mesma__linha {
+    display: inline;
+}
+
+.preco__promocional {
+    font-size: 2em;
+    color: var(--cor_desconto);
+    font-weight: 600;
+}
+
+.conteudo__botao__ver+ {
+    text-align: center;    
+}
+
+.botao__ofertas {
+    background-color: var(--cor_garnvilla);
+    color: var(--cor_de_fundo);
+    text-decoration: none;
+    text-align: center;
+    margin: 30px auto;
+    display: inline-block;
+    padding: 20px 25px;
+    border-radius: 7px;
+}
+
+.banner__vantgens {
+    display: block;
+    width: 100%;
+}
+
+.logo__granvilla {
+    width: 150px;
+    margin: 20px 0 15px;
+}
+
+.endereco {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.titilo__redes {
+    font-size: 0.88em;
+}
+
+.icones__redes {
+    width: 36px;
+    cursor: pointer;
+}
+
+.conteudo-contato{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista__contato {
+    list-style: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .corpo__pagina {
+        width: 45%;
+    }
+
+    .conteudo__produtos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0;       
+    }
+}
